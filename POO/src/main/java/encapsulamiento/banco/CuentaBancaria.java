@@ -4,6 +4,7 @@ public class CuentaBancaria {
     // toda clase puede tener propiedades y metodos
     private double saldo;
     private String titular;
+
     // si no hay un constructor definido, siempre hay un constructor vacio o por defecto
     // public CuentaBancaria(){}
 
@@ -13,6 +14,12 @@ public class CuentaBancaria {
         this.titular = titular;
         this.confirmarApertura(titular);
     }
+
+    public CuentaBancaria(String titular) {
+        this(25000.00, titular);
+        this.confirmarApertura(titular);
+    }
+
 
     public void depositar(double cantidad) {
         if(cantidad > 0) {

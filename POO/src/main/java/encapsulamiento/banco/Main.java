@@ -11,5 +11,9 @@ public class Main {
         cuentaA.retirar(6000);
         System.out.println(cuentaA.getTitular());
         cuentaA.retirar(10000);
+
+        CuentaBancaria cuentaB = new CuentaBancaria("NombreTitular");
+        System.out.println(cuentaB.getTitular());
+
     }
 }
