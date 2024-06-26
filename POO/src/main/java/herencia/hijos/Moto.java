@@ -2,7 +2,7 @@ package main.java.herencia.hijos;
 
 import main.java.herencia.clase_base.Vehiculo;
 
-public class Moto extends Vehiculo {
+public class Moto extends Vehiculo implements Arrancable {
     boolean tieneSideCar;
 
     public Moto(String marca, String modelo, int anio, boolean tieneSideCar) {
@@ -16,13 +16,17 @@ public class Moto extends Vehiculo {
 
     @Override
     public void mostrarDetalles() {
-        super.mostrarDetalles();
-        System.out.println("Tiene sidecar: " + this.tieneSideCar);
+        this.toString();
     }
     @Override
     public String toString() {
         System.out.println(super.toString());
         System.out.println("Sidecar " + this.tieneSideCar);
         return "";
+    }
+
+    @Override
+    public void arrancar() {
+        System.out.println("La moto arranca dandole patadas ...");
     }
 }

@@ -1,6 +1,6 @@
 package main.java.herencia.clase_base;
 
-public class Vehiculo {
+public abstract class Vehiculo {
     // el modificador de acceso protected permite la visibilidad desde las clases hijas
     // sin importar donde se encuentren
     protected String marca;
@@ -37,19 +37,11 @@ public class Vehiculo {
         this.anio = anio;
     }
 
-    public void arrancar() {
-        System.out.println("El vehiculo está arrancando ...");
-    }
-
     public void detener() {
         System.out.println("El vehiculo está detenido ...");
     }
 
-    public void mostrarDetalles() {
-        System.out.println("Marca: " + marca);
-        System.out.println("Modelo: " + modelo);
-        System.out.println("Año:" + anio);
-    }
+    public abstract void mostrarDetalles();
 
     @Override // con esta anotacion indicamos que estamos sobreescribiendo un metodo heredado
     public String toString() {
