@@ -25,17 +25,16 @@ public class Main {
             String marca = marcas[random.nextInt(marcas.length)];
             String modelo = modelos[random.nextInt(modelos.length)];
             int anio = anos[random.nextInt(anos.length)];
-            if (true) { // Decide si es Coche o Bicicleta/Moto
-                int nroDePuertas = random.nextInt(5) + 2; // Entre 2 y 6 puertas
-                if (nroDePuertas >= 4) { // Si es Coche
-                    vehiculos.add(new Coche(marca, modelo, anio, nroDePuertas));
-                } else { // Si es Bicicleta o Moto
-                    boolean tieneExtra = random.nextBoolean();
-                    if (tieneExtra) {
-                        vehiculos.add(new Bicicleta(marca, modelo, anio, tieneCanasto[i]));
-                    } else {
-                        vehiculos.add(new Moto(marca, modelo, anio, tieneSideCar[i]));
-                    }
+            // Decide si es Coche o Bicicleta/Moto
+            int nroDePuertas = random.nextInt(5) + 2; // Entre 2 y 6 puertas
+            if (nroDePuertas >= 4) { // Si es Coche
+                vehiculos.add(new Coche(marca, modelo, anio, nroDePuertas));
+            } else { // Si es Bicicleta o Moto
+                boolean tieneExtra = random.nextBoolean();
+                if (tieneExtra) {
+                    vehiculos.add(new Bicicleta(marca, modelo, anio, tieneCanasto[i]));
+                } else {
+                    vehiculos.add(new Moto(marca, modelo, anio, tieneSideCar[i]));
                 }
             }
         }
