@@ -1,6 +1,6 @@
-package main.java.herencia.hijos;
+package main.java.herencia.domain.models.hijos;
 
-import main.java.herencia.clase_base.Vehiculo;
+import main.java.herencia.domain.models.clase_base.Vehiculo;
 
 public final class Coche extends Vehiculo implements Arrancable {
     int nroDePuertas;
@@ -23,9 +23,12 @@ public final class Coche extends Vehiculo implements Arrancable {
 
     @Override
     public String toString() {
-        System.out.println(super.toString());
-        System.out.println("Cantidad de puertas: " + this.nroDePuertas);
-        return "";
+        return "Coche{" +
+          "nroDePuertas=" + nroDePuertas +
+          ", marca='" + marca + '\'' +
+          ", modelo='" + modelo + '\'' +
+          ", anio=" + anio +
+          '}';
     }
 
     @Override

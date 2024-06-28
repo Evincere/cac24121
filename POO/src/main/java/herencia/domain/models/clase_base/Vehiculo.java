@@ -1,4 +1,4 @@
-package main.java.herencia.clase_base;
+package main.java.herencia.domain.models.clase_base;
 
 public abstract class Vehiculo {
     // el modificador de acceso protected permite la visibilidad desde las clases hijas
@@ -43,12 +43,4 @@ public abstract class Vehiculo {
 
     public abstract void mostrarDetalles();
 
-    @Override // con esta anotacion indicamos que estamos sobreescribiendo un metodo heredado
-    public String toString() {
-        return "Vehiculo {" +
-            "marca='" + marca + '\'' +
-            ", modelo='" + modelo + '\'' +
-            ", anio=" + anio +
-            '}';
-    }
 }

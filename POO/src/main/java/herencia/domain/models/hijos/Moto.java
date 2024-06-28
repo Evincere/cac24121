@@ -1,6 +1,6 @@
-package main.java.herencia.hijos;
+package main.java.herencia.domain.models.hijos;
 
-import main.java.herencia.clase_base.Vehiculo;
+import main.java.herencia.domain.models.clase_base.Vehiculo;
 
 public class Moto extends Vehiculo implements Arrancable {
     boolean tieneSideCar;
@@ -18,11 +18,15 @@ public class Moto extends Vehiculo implements Arrancable {
     public void mostrarDetalles() {
         this.toString();
     }
+
     @Override
     public String toString() {
-        System.out.println(super.toString());
-        System.out.println("Sidecar " + this.tieneSideCar);
-        return "";
+        return "Moto{" +
+          "tieneSideCar=" + tieneSideCar +
+          ", marca='" + marca + '\'' +
+          ", modelo='" + modelo + '\'' +
+          ", anio=" + anio +
+          '}';
     }
 
     @Override
