@@ -1,4 +1,4 @@
-package main.java.garage.domain.models.clase_base;
+package garage.domain.models.clase_base;
 
 public abstract class Vehiculo {
     // el modificador de acceso protected permite la visibilidad desde las clases hijas

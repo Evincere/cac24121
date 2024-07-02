@@ -1,4 +1,4 @@
-package main.java.garage.domain.models.hijos;
+package garage.domain.models.hijos;
 
 public interface Arrancable {
 

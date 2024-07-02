@@ -1,10 +1,10 @@
-Coche{nroDePuertas=6, marca='Mercedes-Benz', modelo='GLC', anio=2020}
-Moto{tieneSideCar=false, marca='Nissan', modelo='X5', anio=2015}
-Coche{nroDePuertas=5, marca='Suzuki', modelo='X5', anio=2018}
-Bicicleta{tieneCanasto=false, marca='Giant', modelo='Civic', anio=2017}
-Coche{nroDePuertas=6, marca='Harley-Davidson', modelo='GSX-R1000', anio=2017}
-Coche{nroDePuertas=5, marca='Mercedes-Benz', modelo='Street 750', anio=2010}
-Moto{tieneSideCar=false, marca='Toyota', modelo='Civic', anio=2020}
-Moto{tieneSideCar=false, marca='Kawasaki', modelo='CR-V', anio=2021}
-Coche{nroDePuertas=4, marca='Toyota', modelo='Talon', anio=2019}
-Coche{nroDePuertas=4, marca='Nissan', modelo='Camry', anio=2017}
+Bicicleta{tieneCanasto=true, marca='Nissan', modelo='Altima', anio=2015}
+Moto{tieneSideCar=false, marca='Harley-Davidson', modelo='Sentra', anio=2017}
+Coche{nroDePuertas=5, marca='Kawasaki', modelo='Corolla', anio=2017}
+Moto{tieneSideCar=true, marca='Toyota', modelo='Street 750', anio=2016}
+Coche{nroDePuertas=5, marca='Mercedes-Benz', modelo='Versa', anio=2014}
+Bicicleta{tieneCanasto=false, marca='BMW', modelo='CBR600RR', anio=2019}
+Coche{nroDePuertas=5, marca='Giant', modelo='RAV4', anio=2021}
+Moto{tieneSideCar=false, marca='Mercedes-Benz', modelo='GLC', anio=2020}
+Coche{nroDePuertas=5, marca='Nissan', modelo='Z250', anio=2016}
+Coche{nroDePuertas=6, marca='Nissan', modelo='YZF-R1', anio=2020}

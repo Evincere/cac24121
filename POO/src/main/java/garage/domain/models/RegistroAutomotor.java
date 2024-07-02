@@ -1,8 +1,8 @@
-package main.java.garage.domain.models;
+package garage.domain.models;
 
+import garage.domain.models.clase_base.Vehiculo;
+import garage.services.RegistroAutomotorService;
 import java.util.ArrayList;
-import main.java.garage.domain.models.clase_base.Vehiculo;
-import main.java.garage.services.RegistroAutomotorService;
 
 public class RegistroAutomotor {
 

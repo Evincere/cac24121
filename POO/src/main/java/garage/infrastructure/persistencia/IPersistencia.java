@@ -1,7 +1,7 @@
-package main.java.garage.infrastructure.persistencia;
+package garage.infrastructure.persistencia;
 
+import garage.domain.models.clase_base.Vehiculo;
 import java.util.ArrayList;
-import main.java.garage.domain.models.clase_base.Vehiculo;
 
 public interface IPersistencia {
 

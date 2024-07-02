@@ -1,6 +1,7 @@
-package main.java.garage.domain.models.hijos;
+package garage.domain.models.hijos;
 
-import main.java.garage.domain.models.clase_base.Vehiculo;
+
+import garage.domain.models.clase_base.Vehiculo;
 
 public final class Coche extends Vehiculo implements Arrancable {
     int nroDePuertas;

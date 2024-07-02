@@ -1,12 +1,12 @@
-package main.java.garage;
+package garage;
 
+import garage.domain.models.RegistroAutomotor;
+import garage.domain.models.clase_base.Vehiculo;
+import garage.domain.models.hijos.Bicicleta;
+import garage.domain.models.hijos.Coche;
+import garage.domain.models.hijos.Moto;
 import java.util.ArrayList;
 import java.util.Random;
-import main.java.garage.domain.models.RegistroAutomotor;
-import main.java.garage.domain.models.clase_base.Vehiculo;
-import main.java.garage.domain.models.hijos.Bicicleta;
-import main.java.garage.domain.models.hijos.Coche;
-import main.java.garage.domain.models.hijos.Moto;
 
 public class Main {
 
@@ -39,15 +39,13 @@ public class Main {
             }
         }
 
-        // Imprimir todos los vehículos generados
+//         Imprimir todos los vehículos generados
 //        for (Vehiculo vehiculo : vehiculos) {
 //            System.out.println(vehiculo.toString());
 //        }
 
         RegistroAutomotor registroAutomotor = new RegistroAutomotor();
         registroAutomotor.guardarVehiculos(vehiculos);
-
-        // Jackson
 
     }
 }
