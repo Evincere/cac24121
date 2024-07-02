@@ -1,8 +1,8 @@
-package main.java.herencia.domain.models;
+package main.java.garage.domain.models;
 
 import java.util.ArrayList;
-import main.java.herencia.domain.models.clase_base.Vehiculo;
-import main.java.herencia.services.RegistroAutomotorService;
+import main.java.garage.domain.models.clase_base.Vehiculo;
+import main.java.garage.services.RegistroAutomotorService;
 
 public class RegistroAutomotor {
 

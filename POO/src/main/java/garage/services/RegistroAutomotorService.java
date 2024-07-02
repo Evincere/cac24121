@@ -1,10 +1,9 @@
-package main.java.herencia.services;
+package main.java.garage.services;
 
 import java.util.ArrayList;
-import main.java.herencia.domain.models.clase_base.Vehiculo;
-import main.java.herencia.infrastructure.persistencia.IPersistencia;
-import main.java.herencia.infrastructure.persistencia.PersistenciaArchivo;
-import main.java.herencia.infrastructure.persistencia.PersistenciaMySQL;
+import main.java.garage.domain.models.clase_base.Vehiculo;
+import main.java.garage.infrastructure.persistencia.IPersistencia;
+import main.java.garage.infrastructure.persistencia.PersistenciaArchivo;
 
 public class RegistroAutomotorService implements IPersistencia {
 

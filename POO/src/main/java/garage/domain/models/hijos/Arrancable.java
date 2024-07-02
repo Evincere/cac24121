@@ -1,4 +1,4 @@
-package main.java.herencia.domain.models.hijos;
+package main.java.garage.domain.models.hijos;
 
 public interface Arrancable {
 

@@ -1,6 +1,6 @@
-package main.java.herencia.domain.models.hijos;
+package main.java.garage.domain.models.hijos;
 
-import main.java.herencia.domain.models.clase_base.Vehiculo;
+import main.java.garage.domain.models.clase_base.Vehiculo;
 
 public class Bicicleta extends Vehiculo {
     private boolean tieneCanasto;

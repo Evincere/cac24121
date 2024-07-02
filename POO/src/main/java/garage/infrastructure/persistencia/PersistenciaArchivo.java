@@ -1,9 +1,9 @@
-package main.java.herencia.infrastructure.persistencia;
+package main.java.garage.infrastructure.persistencia;
 
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
-import main.java.herencia.domain.models.clase_base.Vehiculo;
+import main.java.garage.domain.models.clase_base.Vehiculo;
 
 public class PersistenciaArchivo implements IPersistencia {
 

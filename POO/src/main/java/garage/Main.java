@@ -1,12 +1,12 @@
-package main.java.herencia;
+package main.java.garage;
 
 import java.util.ArrayList;
 import java.util.Random;
-import main.java.herencia.domain.models.RegistroAutomotor;
-import main.java.herencia.domain.models.clase_base.Vehiculo;
-import main.java.herencia.domain.models.hijos.Bicicleta;
-import main.java.herencia.domain.models.hijos.Coche;
-import main.java.herencia.domain.models.hijos.Moto;
+import main.java.garage.domain.models.RegistroAutomotor;
+import main.java.garage.domain.models.clase_base.Vehiculo;
+import main.java.garage.domain.models.hijos.Bicicleta;
+import main.java.garage.domain.models.hijos.Coche;
+import main.java.garage.domain.models.hijos.Moto;
 
 public class Main {
 
