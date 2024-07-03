@@ -5,6 +5,8 @@ import garage.domain.models.clase_base.Vehiculo;
 import garage.domain.models.hijos.Bicicleta;
 import garage.domain.models.hijos.Coche;
 import garage.domain.models.hijos.Moto;
+import garage.infrastructure.persistencia.DatabaseConnection;
+import java.sql.Connection;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -38,14 +40,9 @@ public class Main {
                 }
             }
         }
-
-//         Imprimir todos los vehículos generados
-//        for (Vehiculo vehiculo : vehiculos) {
-//            System.out.println(vehiculo.toString());
-//        }
-
         RegistroAutomotor registroAutomotor = new RegistroAutomotor();
         registroAutomotor.guardarVehiculos(vehiculos);
 
+        Connection conex = DatabaseConnection.getConnection();
     }
 }

@@ -1,18 +1,32 @@
 package garage.domain.models.clase_base;
 
+import com.fasterxml.jackson.annotation.JsonSubTypes;
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
+import com.fasterxml.jackson.annotation.JsonTypeInfo.Id;
+import garage.domain.models.hijos.Bicicleta;
+import garage.domain.models.hijos.Coche;
+import garage.domain.models.hijos.Moto;
+
+@JsonTypeInfo(
+  use = Id.NAME,
+  property = "type"
+)
+@JsonSubTypes({
+  @JsonSubTypes.Type(value = Coche.class, name = "coche"),
+  @JsonSubTypes.Type(value = Bicicleta.class, name = "bicicleta"),
+  @JsonSubTypes.Type(value = Moto.class, name = "moto")
+})
 public abstract class Vehiculo {
-    // el modificador de acceso protected permite la visibilidad desde las clases hijas
-    // sin importar donde se encuentren
     protected String marca;
     protected String modelo;
     protected int anio;
 
+    public Vehiculo() {}
     public Vehiculo(String marca, String modelo, int anio) {
         this.marca = marca;
         this.modelo = modelo;
         this.anio = anio;
     }
-
     public String getMarca() {
         return marca;
     }
