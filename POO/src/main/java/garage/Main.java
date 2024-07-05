@@ -41,8 +41,16 @@ public class Main {
             }
         }
         RegistroAutomotor registroAutomotor = new RegistroAutomotor();
-        registroAutomotor.guardarVehiculos(vehiculos);
+//        registroAutomotor.guardarVehiculos(vehiculos);
 
-        Connection conex = DatabaseConnection.getConnection();
+        ArrayList<Vehiculo> vehiculosRecuperados = registroAutomotor.traerRegistrosVehiculos();
+
+//        for (Vehiculo vehiculo: vehiculosRecuperados){
+//            System.out.println(vehiculo);
+//        }
+
+//        registroAutomotor.actualizarModelo("ZZZZZZZ250", 2014);
+
+        registroAutomotor.borrarVehiculo(7);
     }
 }

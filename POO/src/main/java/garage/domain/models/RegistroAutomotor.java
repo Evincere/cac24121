@@ -13,6 +13,14 @@ public class RegistroAutomotor {
     }
 
     public ArrayList<Vehiculo> traerRegistrosVehiculos() {
-        return new ArrayList<>();
+        return service.traerRegistrosVehiculos();
+    }
+
+    public void actualizarModelo(String modelo, int anio) {
+        service.actualizarModelo(modelo, anio);
+    }
+
+    public void borrarVehiculo(int id) {
+        service.borrarVehiculo(id);
     }
 }

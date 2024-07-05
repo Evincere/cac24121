@@ -17,6 +17,16 @@ public class RegistroAutomotorService implements IPersistencia {
 
     @Override
     public ArrayList<Vehiculo> traerRegistrosVehiculos() {
-        return null;
+        return sistemaDePersistencia.traerRegistrosVehiculos();
+    }
+
+    @Override
+    public void actualizarModelo(String modeloNuevo, int anio) {
+        sistemaDePersistencia.actualizarModelo(modeloNuevo, anio);
+    }
+
+    @Override
+    public void borrarVehiculo(int id) {
+        sistemaDePersistencia.borrarVehiculo(id);
     }
 }

@@ -7,4 +7,6 @@ public interface IPersistencia {
 
     void guardarVehiculos(ArrayList<Vehiculo> vehiculos);
     ArrayList<Vehiculo> traerRegistrosVehiculos();
+    void actualizarModelo(String modeloNuevo, int anio);
+    void borrarVehiculo(int id);
 }

@@ -30,4 +30,14 @@ public class PersistenciaArchivo implements IPersistencia {
     public ArrayList<Vehiculo> traerRegistrosVehiculos() {
         return null;
     }
+
+    @Override
+    public void actualizarModelo(String modeloNuevo, int anio) {
+
+    }
+
+    @Override
+    public void borrarVehiculo(int id) {
+
+    }
 }
