@@ -9,13 +9,13 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import services.UsuarioService;
+import application.services.UsuarioService;
 
 @WebServlet("/users")
 public class UsuarioController extends HttpServlet {
 
-    private ObjectMapper mapper;
-    private UsuarioService service;
+    private final ObjectMapper mapper;
+    private final UsuarioService service;
 
     public UsuarioController() {
         this.mapper = new ObjectMapper();
